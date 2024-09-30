@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('/src/styles/header.css');
+@import url('/src/styles/home.css');
+@import url('/src/styles/menu.css');
+@import url('/src/styles/avaliacao.css');
+@import url('/src/styles/footer.css');
+
+:root {
+  --color-primary-1: #ffff;
+}
+
+* {
+  font-family: 'Poppins', shan-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffffff;
+}
+
+section {
+  padding: 28px 8%;
+}
+
+.btn-default {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 16px;
+  padding: 14px 16px;
+  font-weight: 600;
+  box-shadow: 0px, 0px, 10px, 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: backgroud-color 0.3s ease;
+}
+
+.btn-defaulte {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 16px;
+  padding: 14px 16px;
+  font-weight: 600;
+  box-shadow: 0px, 0px, 10px, 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: backgroud-color 0.3s ease;
+  margin-left: 80px;
+}
+
+.btn-default a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-defaulte a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-default:hover {
+  background-color: #97c39dff ;
+}
+
+.social-media-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.social-media-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 40px;
+  background-color: black;
+  font-size: 1.25rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow .3s ease;
+}
+
+.social-media-buttons a:hover {
+  box-shadow: 0px 0px 12px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  color: #7dcf7d;
+  font-size: 1.563rem;
+}
+
+
+.section-subtitle {
+  font-size: 2.1875rem;
+}
+
+
+#foto {
+  width: 100%; /* Ajusta a largura para 100% do contêiner pai */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 10px; /* Adiciona bordas arredondadas, se desejar */
+  display: block; /* Remove espaços em branco em torno da imagem */
+   background-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.btn-defaulti {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  font-weight: 600;
+  box-shadow: 0px, 0px, 10px, 2px rgba(0, 0, 0, 0.1);
+  transition: backgroud-color 0.3s ease;
+
+  border: 2px solid black; /* Borda de 2px, sólida, na cor branca */
+  padding: 10px 20px; /* Espaçamento interno */
+  cursor: pointer; /* Cursor de mão */
+  border-radius: 16px; /* Bordas arredondadas (opcional) */
+}
+
+.btn-defaulti:hover {
+  background-color: #97c39dff ;
+}
+
+.btn-defaulti a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#marcas {
+  display: flex;                /* Define que o layout será flexível */
+  flex-wrap: wrap;              /* Faz com que as imagens que não cabem na linha rolem para a próxima */
+  justify-content: center;      /* Centraliza as imagens */
+  gap: 80px;                    /* Espaçamento entre as imagens */
+}
+
+.logos img {
+  width: 200px;                 /* Define a largura das imagens */
+  height: 200px;                /* Define a altura das imagens */
+  object-fit: cover;            /* Faz com que as imagens se ajustem corretamente ao espaço */
+  border-radius: 18px;           /* Opcional: bordas arredondadas */
+}
+
+@media (max-width: 768px) {
+  .logos img {
+    display: none;
+  }
+}
+
+#garantia {
+  display: flex;                /* Coloca os itens em uma linha */
+  justify-content: space-around; /* Distribui espaço entre as divs */
+  align-items: flex-start;      /* Alinha o conteúdo ao topo */
+  gap: 20px;                    /* Espaçamento entre as divs */
+  padding: -20px;                /* Espaço interno na section */
+}
+
+#garantia div {
+  width: 45%;                   /* Cada div ocupa 45% da tela */
+  text-align: center;           /* Centraliza o conteúdo dentro da div */
+}
+
+#icone {
+  font-size: 40px;
+  margin-bottom: 10px;          
+}
+
+
+@media (max-width: 768px) {
+  #garantia {
+      flex-direction: column;   /* Empilha as divs uma embaixo da outra em telas pequenas */
+  }
+
+  #garantia div {
+      width: 100%;              /* As divs ocupam 100% da largura da tela em dispositivos menores */
+  }
+}
+
